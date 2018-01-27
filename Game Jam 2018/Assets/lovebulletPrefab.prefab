@@ -9,24 +9,20 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1482980506935726}
+  m_RootGameObject: {fileID: 1899175663689018}
   m_IsPrefabParent: 1
---- !u!1 &1482980506935726
+--- !u!1 &1899175663689018
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4666726228021868}
-  - component: {fileID: 212243057581004524}
-  - component: {fileID: 114151034306559802}
-  - component: {fileID: 54989732438251718}
-<<<<<<< HEAD:Game Jam 2018/Assets/lovebulletPrefab.prefab
-  - component: {fileID: 114137181731597130}
-=======
-  - component: {fileID: 114243091330384044}
->>>>>>> 34c0b5faa629df47a38f786dc7ed5833771ed6ac:Game Jam 2018/Assets/bullet.prefab
+  - component: {fileID: 4895230789376878}
+  - component: {fileID: 212856015648499914}
+  - component: {fileID: 114895869810090436}
+  - component: {fileID: 54437351835329914}
+  - component: {fileID: 114399528199271398}
   m_Layer: 0
   m_Name: lovebulletPrefab
   m_TagString: Untagged
@@ -34,25 +30,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4666726228021868
+--- !u!4 &4895230789376878
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1482980506935726}
+  m_GameObject: {fileID: 1899175663689018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.96, y: 1.46, z: 0}
+  m_LocalPosition: {x: -5.6400595, y: -12.300314, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &54989732438251718
+--- !u!54 &54437351835329914
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1482980506935726}
+  m_GameObject: {fileID: 1899175663689018}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -62,12 +58,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114137181731597130
+--- !u!114 &114399528199271398
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1482980506935726}
+  m_GameObject: {fileID: 1899175663689018}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b821ede15b5ef964180f62c22c362529, type: 3}
@@ -77,38 +73,23 @@ MonoBehaviour:
   yfire: 0
   shotSpeed: 5
   playerNo: 1
---- !u!114 &114151034306559802
+--- !u!114 &114895869810090436
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1482980506935726}
+  m_GameObject: {fileID: 1899175663689018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0981fbc26211804e9574814443f9c15, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  xfire: 0
-  yfire: 0
---- !u!114 &114243091330384044
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1482980506935726}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b821ede15b5ef964180f62c22c362529, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xfire: 0
-  yfire: 0
---- !u!212 &212243057581004524
+--- !u!212 &212856015648499914
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1482980506935726}
+  m_GameObject: {fileID: 1899175663689018}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -145,5 +126,5 @@ SpriteRenderer:
   m_Size: {x: 4, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
