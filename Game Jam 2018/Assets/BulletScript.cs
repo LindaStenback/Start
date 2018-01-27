@@ -6,11 +6,29 @@ public class BulletScript : MonoBehaviour
 {
 	public float xfire;
 	public float yfire;
+	public float shotSpeed = 5;
+	public int playerNo;
 
 	// Use this for initialization
 	void Start () 
 	{
+<<<<<<< HEAD
+		if (playerNo == 1) 
+		{
+			xfire = Input.GetAxis ("xShoot")* shotSpeed;
+			yfire = Input.GetAxis ("yShoot")* shotSpeed;
+		} 
+		else 
+		{
+			xfire = Input.GetAxis ("xShootP2")* shotSpeed;
+			yfire = Input.GetAxis ("yShootP2")* shotSpeed;
+		}
+
+
+		GetComponent<Rigidbody> ().velocity = new Vector3 (xfire, yfire, 0);
+=======
 		
+>>>>>>> 34c0b5faa629df47a38f786dc7ed5833771ed6ac
 	}
 	
 	// Update is called once per frame
