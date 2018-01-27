@@ -7,7 +7,7 @@ public class Seek : SteeringBehaviour
     public override Vector3 UpdateBehaviour(SteeringAgent steeringAgent)
     {
 
-        Vector3 targetPosition = steeringAgent.target.transform.position;
+        Vector3 targetPosition = steeringAgent.seekTarget.transform.position;
 
 
         Vector3 leftRay = transform.position;
@@ -17,7 +17,7 @@ public class Seek : SteeringBehaviour
         
 
         desiredVelocity = direction * steeringAgent.maxSpeed;
-        steeringVelocity = (desiredVelocity - steeringAgent.currentVelocity) * steeringAgent.arrivalWeight;
+        steeringVelocity = (desiredVelocity - steeringAgent.currentVelocity) * steeringAgent.seekWeight;
             return steeringVelocity;
         }
         
