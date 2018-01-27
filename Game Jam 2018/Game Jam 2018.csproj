@@ -287,14 +287,15 @@
   <ItemGroup>
     <Compile Include="Assets\BulletScript.cs" />
     <Compile Include="Assets\CollisionScript.cs" />
+    <Compile Include="Assets\For GameJam\CollisionAvoidance.cs" />
+    <Compile Include="Assets\For GameJam\RaycastAvoidance.cs" />
     <Compile Include="Assets\For GameJam\Seek.cs" />
+    <Compile Include="Assets\For GameJam\SteeringAgent.cs" />
+    <Compile Include="Assets\For GameJam\SteeringBehaviour.cs" />
     <Compile Include="Assets\For GameJam\Wander.cs" />
     <Compile Include="Assets\LifeScript.cs" />
     <Compile Include="Assets\MovementScript.cs" />
     <Compile Include="Assets\Player.cs" />
-    <Compile Include="Assets\PlayerMovementScript.cs" />
-    <Compile Include="Assets\SteeringAgent.cs" />
-    <Compile Include="Assets\SteeringBehaviour.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
