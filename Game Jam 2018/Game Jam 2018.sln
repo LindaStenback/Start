@@ -1,7 +1,25 @@
 ﻿
+<<<<<<< HEAD
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game Jam 2018", "Game Jam 2018.csproj", "{54882CD5-6D0D-91A7-9E53-5EF38500AB8A}"
+=======
+<<<<<<< HEAD
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game Jam 2018", "Assembly-CSharp.csproj", "{00E9B5EE-0F59-CE13-2A47-746694A2141C}"
+=======
+<<<<<<< HEAD
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game Jam 2018", "Assembly-CSharp.csproj", "{00E9B5EE-0F59-CE13-2A47-746694A2141C}"
+=======
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game Jam 2018.CSharp", "Game Jam 2018.CSharp.csproj", "{488776C8-B213-56C6-AC23-40DDE53273B5}"
+>>>>>>> 44fa26795afdb03e4c4dc830d6dd2c35cff9d312
+>>>>>>> cf5f085f1395a7ad3715bc27794cb49ee838105a
+>>>>>>> 1da0585daf645e1dbbe91147ab3c31c3b0912404
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +27,30 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+<<<<<<< HEAD
 		{54882CD5-6D0D-91A7-9E53-5EF38500AB8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{54882CD5-6D0D-91A7-9E53-5EF38500AB8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54882CD5-6D0D-91A7-9E53-5EF38500AB8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54882CD5-6D0D-91A7-9E53-5EF38500AB8A}.Release|Any CPU.Build.0 = Release|Any CPU
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> cf5f085f1395a7ad3715bc27794cb49ee838105a
+		{00E9B5EE-0F59-CE13-2A47-746694A2141C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E9B5EE-0F59-CE13-2A47-746694A2141C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E9B5EE-0F59-CE13-2A47-746694A2141C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E9B5EE-0F59-CE13-2A47-746694A2141C}.Release|Any CPU.Build.0 = Release|Any CPU
+<<<<<<< HEAD
+=======
+=======
+		{488776C8-B213-56C6-AC23-40DDE53273B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{488776C8-B213-56C6-AC23-40DDE53273B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{488776C8-B213-56C6-AC23-40DDE53273B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{488776C8-B213-56C6-AC23-40DDE53273B5}.Release|Any CPU.Build.0 = Release|Any CPU
+>>>>>>> 44fa26795afdb03e4c4dc830d6dd2c35cff9d312
+>>>>>>> cf5f085f1395a7ad3715bc27794cb49ee838105a
+>>>>>>> 1da0585daf645e1dbbe91147ab3c31c3b0912404
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

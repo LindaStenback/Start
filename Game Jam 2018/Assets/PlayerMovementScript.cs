@@ -61,21 +61,24 @@ public class PlayerMovementScript : MonoBehaviour
 
 		characterController.Move (movementVector * Time.deltaTime);
 
-
 		float rotationAngle = Mathf.Atan2 (horizontalRotate, verticalRotate) * Mathf.Rad2Deg;
-		characterController.transform.rotation = Quaternion.Euler(new Vector3 (0, 0, rotationAngle));
 
-		bulletShot.rotation = transform.rotation;
+		Quaternion rotation = Quaternion.Euler(new Vector3 (0, 0, rotationAngle));
+		transform.rotation =  Quaternion.Lerp (transform.rotation, rotation, movementSpeed * Time.deltaTime);
+
+		 
+
+		bulletShot.rotation = Quaternion.Euler(new Vector3 (0, 0, rotationAngle));
 
 
-		if (((xfire > 0.9 || xfire < -0.9)) & (shotDelay == 0))
+		if (((xfire > 0.8 || xfire < -0.8)) & (shotDelay == 0))
 		{
 			shotDelay = 1;
 			Instantiate (bulletShot, transform.position, bulletShot.rotation);
 			StartCoroutine(delayRest());
 		}
 
-		if (((yfire > 0.9 || yfire < -0.9)) & (shotDelay == 0))
+		if (((yfire > 0.8 || yfire < -0.8)) & (shotDelay == 0))
 		{
 			shotDelay = 1;
 			Instantiate (bulletShot, transform.position, bulletShot.rotation);
