@@ -10,8 +10,8 @@ public class Follow : MonoBehaviour
     GameObject player2;
 
 
-    public bool Player1sBitch;
-    public bool Player2sBitch;
+    public bool Player1sBitch = false;
+    public bool Player2sBitch = false;
     public SteeringAgent steeringAgent;
 
 	// Use this for initialization
