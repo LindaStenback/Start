@@ -287,9 +287,9 @@
   <ItemGroup>
     <Compile Include="Assets\BulletScript.cs" />
     <Compile Include="Assets\CollisionScript.cs" />
-    <Compile Include="Assets\For GameJam\Arrival.cs" />
     <Compile Include="Assets\For GameJam\CollisionAvoidance.cs" />
     <Compile Include="Assets\For GameJam\RaycastAvoidance.cs" />
+    <Compile Include="Assets\For GameJam\Seek.cs" />
     <Compile Include="Assets\For GameJam\SteeringAgent.cs" />
     <Compile Include="Assets\For GameJam\SteeringBehaviour.cs" />
     <Compile Include="Assets\For GameJam\Wander.cs" />
