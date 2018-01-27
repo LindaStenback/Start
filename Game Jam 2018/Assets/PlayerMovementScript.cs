@@ -9,6 +9,7 @@ public class PlayerMovementScript : MonoBehaviour
 	private CharacterController characterController;
 
 	private float movementSpeed = 8;
+	private float rotationSpeed;
 
 	public float xfire;
 
@@ -60,13 +61,21 @@ public class PlayerMovementScript : MonoBehaviour
 		}
 
 		characterController.Move (movementVector * Time.deltaTime);
+		Rigidbody rb = GetComponent<Rigidbody>();
 
 		float rotationAngle = Mathf.Atan2 (horizontalRotate, verticalRotate) * Mathf.Rad2Deg;
 
 		Quaternion rotation = Quaternion.Euler(new Vector3 (0, 0, rotationAngle));
-		transform.rotation =  Quaternion.Lerp (transform.rotation, rotation, movementSpeed * Time.deltaTime);
+		transform.rotation =  Quaternion.Lerp (transform.rotation, rotation, rotationSpeed * Time.deltaTime);
 
-		 
+		if (xfire != 0 || yfire != 0) 
+		{
+			rotationSpeed = 8;
+		}
+		else
+		{
+			rotationSpeed = 0;
+		}
 
 		bulletShot.rotation = Quaternion.Euler(new Vector3 (0, 0, rotationAngle));
 
