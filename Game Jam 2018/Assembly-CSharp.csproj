@@ -51,11 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BulletScript.cs" />
      <Compile Include="Assets\For GameJam\CollisionAvoidance.cs" />
      <Compile Include="Assets\For GameJam\RaycastAvoidance.cs" />
      <Compile Include="Assets\For GameJam\SteeringAgent.cs" />
      <Compile Include="Assets\For GameJam\SteeringBehaviour.cs" />
      <Compile Include="Assets\For GameJam\Wander.cs" />
+     <Compile Include="Assets\MovementScript.cs" />
      <Compile Include="Assets\Player.cs" />
      <Compile Include="Assets\Ryan Lang Scripts\PlayerController.cs" />
  <Reference Include="UnityEngine.UI">
