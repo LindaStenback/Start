@@ -22,7 +22,11 @@ GameObject:
   - component: {fileID: 212243057581004524}
   - component: {fileID: 114151034306559802}
   - component: {fileID: 54989732438251718}
+<<<<<<< HEAD:Game Jam 2018/Assets/lovebulletPrefab.prefab
   - component: {fileID: 114137181731597130}
+=======
+  - component: {fileID: 114243091330384044}
+>>>>>>> 34c0b5faa629df47a38f786dc7ed5833771ed6ac:Game Jam 2018/Assets/bullet.prefab
   m_Layer: 0
   m_Name: lovebulletPrefab
   m_TagString: Untagged
@@ -86,6 +90,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xfire: 0
   yfire: 0
+--- !u!114 &114243091330384044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1482980506935726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b821ede15b5ef964180f62c22c362529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xfire: 0
+  yfire: 0
 --- !u!212 &212243057581004524
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -128,5 +145,5 @@ SpriteRenderer:
   m_Size: {x: 4, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0

@@ -12,6 +12,7 @@ public class BulletScript : MonoBehaviour
 	// Use this for initialization
 	void Start () 
 	{
+<<<<<<< HEAD
 		if (playerNo == 1) 
 		{
 			xfire = Input.GetAxis ("xShoot")* shotSpeed;
@@ -25,11 +26,41 @@ public class BulletScript : MonoBehaviour
 
 
 		GetComponent<Rigidbody> ().velocity = new Vector3 (xfire, yfire, 0);
+=======
+		
+>>>>>>> 34c0b5faa629df47a38f786dc7ed5833771ed6ac
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		
-	}
+        BulletFire();
+
+    }
+
+   void BulletFire()
+    {
+        xfire = Input.GetAxis("Right Joystick X");
+        yfire = Input.GetAxis("Right Joystick Y");
+
+        if (xfire >= 0.2)
+        {
+            xfire = 5;
+        }
+        if (xfire <= -0.2)
+        {
+            xfire = -5;
+        }
+
+        if (yfire >= -0.2)
+        {
+            yfire = 5;
+        }
+        if (yfire <= 0.2)
+        {
+            yfire = -5;
+        }
+
+        GetComponent<Rigidbody>().velocity = new Vector3(xfire, yfire, 0);
+    }
 }
