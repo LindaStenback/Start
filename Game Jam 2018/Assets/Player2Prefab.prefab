@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114823331875313284}
   - component: {fileID: 143377292914762066}
   - component: {fileID: 135106063985627860}
-  - component: {fileID: 114415098407261340}
+  - component: {fileID: 114269234685505826}
   m_Layer: 0
   m_Name: Player2Prefab
   m_TagString: Untagged
@@ -44,7 +44,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114415098407261340
+--- !u!114 &114269234685505826
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -52,7 +52,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1890013584243870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45fcdaf5de556cb4ebd670208c11d7bf, type: 3}
+  m_Script: {fileID: 11500000, guid: c36344311c3147a409ea7052c6f40593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   xfire: 0

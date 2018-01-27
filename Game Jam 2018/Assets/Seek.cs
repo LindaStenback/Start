@@ -19,6 +19,12 @@ public class Seek : SteeringBehaviour
         desiredVelocity = direction * steeringAgent.maxSpeed;
         steeringVelocity = (desiredVelocity - steeringAgent.currentVelocity) * steeringAgent.seekWeight;
             return steeringVelocity;
+
+
+
+
+
+
         }
         
     
