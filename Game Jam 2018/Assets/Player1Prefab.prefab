@@ -23,7 +23,11 @@ GameObject:
   - component: {fileID: 114916615819870610}
   - component: {fileID: 143348261330715788}
   - component: {fileID: 135462073144147944}
+<<<<<<< HEAD
+  - component: {fileID: 114067516716640114}
+=======
   - component: {fileID: 114031894960483160}
+>>>>>>> 1da0585daf645e1dbbe91147ab3c31c3b0912404
   m_Layer: 0
   m_Name: Player1Prefab
   m_TagString: Untagged
@@ -44,7 +48,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+--- !u!114 &114067516716640114
+=======
 --- !u!114 &114031894960483160
+>>>>>>> 1da0585daf645e1dbbe91147ab3c31c3b0912404
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -58,7 +66,11 @@ MonoBehaviour:
   xfire: 0
   yfire: 0
   playerNo: 1
+<<<<<<< HEAD
+  bulletShot: {fileID: 4801065316828228, guid: 8e801960f59da9a47815ddf0e50da213, type: 2}
+=======
   bulletShot: {fileID: 4110643409993134, guid: e7a97847c0720cc4795a3354c11b7a05, type: 2}
+>>>>>>> 1da0585daf645e1dbbe91147ab3c31c3b0912404
   shotDelay: 0
 --- !u!114 &114916615819870610
 MonoBehaviour:

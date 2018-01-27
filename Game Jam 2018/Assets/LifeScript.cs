@@ -20,8 +20,9 @@ public class LifeScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
-	}
+        player1 = GameObject.FindGameObjectWithTag("Player1");
+        player2 = GameObject.FindGameObjectWithTag("Player2");
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -33,18 +34,7 @@ public class LifeScript : MonoBehaviour {
 
     }
 
-	void OnCollisionEnter(Collision collision)
-	{
-        if (this.tag == "Player1sBitch" && collision.gameObject.tag == "Player2")
-        {
-            player2Health -= 1;
-        }
-
-        if (this.tag == "Player2sBitch" && collision.gameObject.tag == "Player1")
-        {
-            player1Health -= 1;
-        }
-	}
+	
 
     void PlayerLivesManager()
     {
@@ -66,13 +56,13 @@ public class LifeScript : MonoBehaviour {
     
         if (player1RespawnTimer > 0)
         {
-            player1.SetActive(false);
+          //  player1.SetActive(false);
             player1.GetComponent<Collider>().enabled = false;
         }
 
         if (player2RespawnTimer > 0)
         {
-            player2.SetActive(false);
+           // player2.SetActive(false);
             player2.GetComponent<Collider>().enabled = false;
         }
 

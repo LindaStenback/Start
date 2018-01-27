@@ -11,6 +11,8 @@ TagManager:
   - Player1sBitch
   - Player2sBitch
   - Bullet2
+  - Enemies
+  - Camera
   layers:
   - Default
   - TransparentFX

@@ -23,7 +23,11 @@ GameObject:
   - component: {fileID: 114823331875313284}
   - component: {fileID: 143377292914762066}
   - component: {fileID: 135106063985627860}
+<<<<<<< HEAD
+  - component: {fileID: 114269234685505826}
+=======
   - component: {fileID: 114772889077576448}
+>>>>>>> 1da0585daf645e1dbbe91147ab3c31c3b0912404
   m_Layer: 0
   m_Name: Player2Prefab
   m_TagString: Untagged
@@ -44,7 +48,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+--- !u!114 &114269234685505826
+=======
 --- !u!114 &114772889077576448
+>>>>>>> 1da0585daf645e1dbbe91147ab3c31c3b0912404
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
