@@ -22,8 +22,9 @@ GameObject:
   - component: {fileID: 212243057581004524}
   - component: {fileID: 114151034306559802}
   - component: {fileID: 54989732438251718}
+  - component: {fileID: 114137181731597130}
   m_Layer: 0
-  m_Name: bullet
+  m_Name: lovebulletPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1482980506935726}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.927, y: -1.006, z: 0}
-  m_LocalScale: {x: 0.20547433, y: 0.20547427, z: 1}
+  m_LocalPosition: {x: -4.96, y: 1.46, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -57,6 +58,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114137181731597130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1482980506935726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b821ede15b5ef964180f62c22c362529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xfire: 0
+  yfire: 0
+  shotSpeed: 5
+  playerNo: 1
 --- !u!114 &114151034306559802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -104,12 +120,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0efdbc283aa751542960f76acc972604, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5e22fb19e974f0245bcd8b9915b6684b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 5, y: 5}
+  m_Size: {x: 4, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
