@@ -10,8 +10,8 @@ public class LifeScript : MonoBehaviour {
     int maxHealth = 3;
     public float player1RespawnTimer;
     public float player2RespawnTimer;
-    Transform player1Transform;
-    Transform player2Transform;
+    public Transform player1Transform;
+    public Transform player2Transform;
     public Vector3 player1SpawnPoint = new Vector3(-8, 1.5f, 0);
     public Vector3 player2SpawnPoint = new Vector3(6.5f, 1.6f, 0);
     public GameObject player1;
@@ -33,18 +33,7 @@ public class LifeScript : MonoBehaviour {
 
     }
 
-	void OnCollisionEnter(Collision collision)
-	{
-        if (this.tag == "Player1sBitch" && collision.gameObject.tag == "Player2")
-        {
-            player2Health -= 1;
-        }
-
-        if (this.tag == "Player2sBitch" && collision.gameObject.tag == "Player1")
-        {
-            player1Health -= 1;
-        }
-	}
+	
 
     void PlayerLivesManager()
     {
@@ -66,25 +55,25 @@ public class LifeScript : MonoBehaviour {
     
         if (player1RespawnTimer > 0)
         {
-            player1.SetActive(false);
+           // player1.SetActive(false);
             player1.GetComponent<Collider>().enabled = false;
         }
 
         if (player2RespawnTimer > 0)
         {
-            player2.SetActive(false);
+            //player2.SetActive(false);
             player2.GetComponent<Collider>().enabled = false;
         }
 
         if (player1RespawnTimer < 0)
         {
-            player1.SetActive(true);
+            //player1.SetActive(true);
             player1.GetComponent<Collider>().enabled = true;
         }
 
         if (player2RespawnTimer < 0)
         {
-            player2.SetActive(true);
+           // player2.SetActive(true);
             player2.GetComponent<Collider>().enabled = true;
         }
 
