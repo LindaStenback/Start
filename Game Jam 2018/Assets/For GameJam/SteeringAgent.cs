@@ -15,10 +15,8 @@ public class SteeringAgent : MonoBehaviour {
      public Vector3 currentVelocity;
 
     public GameObject target;
-    public GameObject seekTarget;
-    public GameObject evadeTarget;
 
-    public float seekWeight = 0, fleeWeight = 0, wanderWeight = 1f, arrivalWeight = 0f, collisionAvoidanceWeight = 0, separationWeight = 0, cohesionWeight = 0, alignmentWeight = 0;
+    public float arrivalWeight, collisionWeight, wanderWeight;
 
     public RaycastHit hit;
 

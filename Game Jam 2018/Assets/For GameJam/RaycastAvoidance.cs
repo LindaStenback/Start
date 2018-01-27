@@ -40,7 +40,7 @@ public class RaycastAvoidance : SteeringBehaviour {
    
 
                 desiredVelocity = direction * steeringAgent.maxSpeed;
-                steeringVelocity = (desiredVelocity - steeringAgent.currentVelocity) * steeringAgent.collisionAvoidanceWeight;
+                steeringVelocity = (desiredVelocity - steeringAgent.currentVelocity) * steeringAgent.collisionWeight;
             }
 
 

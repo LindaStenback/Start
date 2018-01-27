@@ -8,7 +8,7 @@ public class MovementScript : MonoBehaviour
 
 	private CharacterController characterController;
 
-	private float movementSpeed = 8;
+	public float movementSpeed = 8;
 
 	public float xfire;
 
