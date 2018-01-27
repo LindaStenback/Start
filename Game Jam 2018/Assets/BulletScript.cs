@@ -13,22 +13,14 @@ public class BulletScript : MonoBehaviour
 	void Start () 
 	{
 
-		if (playerNo == 1) 
-		{
-			xfire = Input.GetAxis ("xShoot")* shotSpeed;
-			yfire = Input.GetAxis ("yShoot")* shotSpeed;
-		} 
-		else 
-		{
-			xfire = Input.GetAxis ("xShootP2")* shotSpeed;
-			yfire = Input.GetAxis ("yShootP2")* shotSpeed;
+		if (playerNo == 1) {
+			xfire = Input.GetAxis ("xShoot") * shotSpeed;
+			yfire = Input.GetAxis ("yShoot") * shotSpeed;
+		} else {
+			xfire = Input.GetAxis ("xShootP2") * shotSpeed;
+			yfire = Input.GetAxis ("yShootP2") * shotSpeed;
 		}
-
-
-		GetComponent<Rigidbody> ().velocity = new Vector3 (xfire, yfire, 0);
-
-		
-
+				
 	}
 	
 	// Update is called once per frame
@@ -40,27 +32,7 @@ public class BulletScript : MonoBehaviour
 
    void BulletFire()
     {
-        xfire = Input.GetAxis("Right Joystick X");
-        yfire = Input.GetAxis("Right Joystick Y");
-
-        if (xfire >= 0.2)
-        {
-            xfire = 5;
-        }
-        if (xfire <= -0.2)
-        {
-            xfire = -5;
-        }
-
-        if (yfire >= -0.2)
-        {
-            yfire = 5;
-        }
-        if (yfire <= 0.2)
-        {
-            yfire = -5;
-        }
-
+       
         GetComponent<Rigidbody>().velocity = new Vector3(xfire, yfire, 0);
     }
 }
