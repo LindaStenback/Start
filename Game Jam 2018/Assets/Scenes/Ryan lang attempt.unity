@@ -233,13 +233,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxSpeed: 2
   playerVelocity: {x: 0, y: 0, z: 0}
-  maxSteering: 2
+  maxSteering: 1
   steeringBehvaiours: []
   currentVelocity: {x: 0, y: 0, z: 0}
   target: {fileID: 2032784831}
   arrivalWeight: 0
   collisionWeight: 1
-  wanderWeight: 1
+  wanderWeight: 0
 --- !u!212 &702788526
 SpriteRenderer:
   m_ObjectHideFlags: 0

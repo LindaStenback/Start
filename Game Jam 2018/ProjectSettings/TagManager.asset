@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Collision
+  - Bullet
+  - Player1
+  - Player2
+  - Player1sBitch
+  - Player2sBitch
   layers:
   - Default
   - TransparentFX
