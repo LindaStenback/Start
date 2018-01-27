@@ -286,7 +286,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\BulletScript.cs" />
+    <Compile Include="Assets\BulletScript1.cs" />
     <Compile Include="Assets\CollisionScript.cs" />
+    <Compile Include="Assets\Follow.cs" />
     <Compile Include="Assets\LifeScript.cs" />
     <Compile Include="Assets\MovementScript.cs" />
     <Compile Include="Assets\Player.cs" />
