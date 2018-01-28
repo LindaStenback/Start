@@ -31,6 +31,7 @@ public class BulletCollisionScript: MonoBehaviour {
                         follow.Player1sBitch = true;
                         follow.Player2sBitch = false;
                         other.tag = "Player1sBitch";
+                        other.GetComponent<SpriteRenderer>().color = Color.magenta;
                     }
                 }
 
@@ -43,6 +44,7 @@ public class BulletCollisionScript: MonoBehaviour {
                         follow.Player2sBitch = true;
                         follow.Player1sBitch = false;
                         other.tag = "Player2sBitch";
+                        other.GetComponent<SpriteRenderer>().color = Color.green;
                     }
                 }
 
@@ -58,6 +60,7 @@ public class BulletCollisionScript: MonoBehaviour {
                         follow.Player2sBitch = true;
                         follow.Player1sBitch = false;
                         other.tag = "Player2sBitch";
+                        other.GetComponent<SpriteRenderer>().color = Color.green;
                     }
                 }
                 break;
@@ -70,6 +73,7 @@ public class BulletCollisionScript: MonoBehaviour {
                     follow.Player1sBitch = true;
                     follow.Player2sBitch = false;
                     other.tag = "Player1sBitch";
+                    other.GetComponent<SpriteRenderer>().color = Color.magenta;
                 }
                 break;
         }
