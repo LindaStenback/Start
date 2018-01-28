@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Follow : MonoBehaviour 
 {
-	public float speed;
+
 
 	GameObject player; 
     GameObject player2;
