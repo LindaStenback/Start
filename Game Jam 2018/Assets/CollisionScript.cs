@@ -21,7 +21,8 @@ public class CollisionScript : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-
+        playerLifeScript = GameObject.FindGameObjectWithTag("Player1").GetComponent<LifeScript>();
+        playerLifeScript2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<LifeScript>();
     }
 
     // Update is called once per frame
@@ -46,7 +47,9 @@ public class CollisionScript : MonoBehaviour {
                     }
                     else
                     {
-                        if (!p2Immune) {
+                        if (!p2Immune)
+                        {
+                            
                             playerLifeScript.player2Health -= 1;
                         }
                     }

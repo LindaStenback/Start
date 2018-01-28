@@ -24,8 +24,24 @@ GameObject:
   - component: {fileID: 143046167915793758}
   - component: {fileID: 135989396458890998}
   - component: {fileID: 114593460774214898}
+  - component: {fileID: 114085298932349272}
   m_Layer: 0
   m_Name: Player2Prefab 1
+  m_TagString: Player2
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1421164258262658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4504992222433472}
+  m_Layer: 0
+  m_Name: bulletSpawn2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,10 +56,42 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.2, y: -6.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4504992222433472}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4504992222433472
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1421164258262658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4429680324962320}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114085298932349272
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1333185631350574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2e86494f5e7c39458466ca2e676b58b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLifeScript: {fileID: 0}
+  playerLifeScript2: {fileID: 0}
+  auraBuffTimerP1: 0
+  auraBuffTimerP2: 0
+  immuneTimerP1: 0
+  immuneTimerP2: 0
+  follow: {fileID: 0}
 --- !u!114 &114593460774214898
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -55,6 +103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36344311c3147a409ea7052c6f40593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 8
   xfire: 0
   yfire: 0
   playerNo: 2
@@ -68,9 +117,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1333185631350574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: c36344311c3147a409ea7052c6f40593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementSpeed: 8
+  xfire: 0
+  yfire: 0
+  playerNo: 2
+  bulletShot: {fileID: 4504992222433472}
+  shotDelay: 0
 --- !u!135 &135989396458890998
 SphereCollider:
   m_ObjectHideFlags: 1

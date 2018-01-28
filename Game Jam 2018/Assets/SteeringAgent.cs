@@ -26,7 +26,7 @@ public class SteeringAgent : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-
+        seekTarget = GameObject.FindGameObjectWithTag("SeekTarget");
 	}
 	
 	// Update is called once per frame

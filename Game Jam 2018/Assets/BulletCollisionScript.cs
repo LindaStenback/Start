@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class BulletCollisionScript: MonoBehaviour {
     public Follow follow;
-   
+    public GameObject NPCPrefab;
+    public Vector3 spawnPoint;
 
     // Use this for initialization
     void Start () {
-		
+        spawnPoint = new Vector3(0, 0, 0);
+
 	}
 	
 	// Update is called once per frame
@@ -24,6 +26,7 @@ public class BulletCollisionScript: MonoBehaviour {
              if (this.gameObject.tag == "Bullet")
                 {
                     follow = other.gameObject.GetComponent<Follow>();
+                    SpawnNewNPC();
                     if (follow.Player1sBitch == false)
                     {
                         other.gameObject.GetComponent<Follow>();
@@ -31,11 +34,13 @@ public class BulletCollisionScript: MonoBehaviour {
                         follow.Player1sBitch = true;
                         follow.Player2sBitch = false;
                         other.tag = "Player1sBitch";
+                        other.GetComponent<SpriteRenderer>().color = Color.magenta;
                     }
                 }
 
              if( this.gameObject.tag == "Bullet2")
                 {
+                    SpawnNewNPC();
                     follow = other.gameObject.GetComponent<Follow>();
                     if (follow.Player2sBitch == false)
                     {
@@ -43,6 +48,7 @@ public class BulletCollisionScript: MonoBehaviour {
                         follow.Player2sBitch = true;
                         follow.Player1sBitch = false;
                         other.tag = "Player2sBitch";
+                        other.GetComponent<SpriteRenderer>().color = Color.green;
                     }
                 }
 
@@ -58,6 +64,7 @@ public class BulletCollisionScript: MonoBehaviour {
                         follow.Player2sBitch = true;
                         follow.Player1sBitch = false;
                         other.tag = "Player2sBitch";
+                        other.GetComponent<SpriteRenderer>().color = Color.green;
                     }
                 }
                 break;
@@ -70,6 +77,7 @@ public class BulletCollisionScript: MonoBehaviour {
                     follow.Player1sBitch = true;
                     follow.Player2sBitch = false;
                     other.tag = "Player1sBitch";
+                    other.GetComponent<SpriteRenderer>().color = Color.magenta;
                 }
                 break;
         }
@@ -104,5 +112,13 @@ public class BulletCollisionScript: MonoBehaviour {
         //}
 
        
+    }
+
+    void SpawnNewNPC()
+    {
+        
+        Instantiate<GameObject>(NPCPrefab);
+        NPCPrefab.transform.position = new Vector3(0, 0, 0);
+
     }
 }

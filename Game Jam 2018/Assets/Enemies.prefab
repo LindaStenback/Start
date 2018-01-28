@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 135474641119020722}
   m_Layer: 0
   m_Name: Enemies
-  m_TagString: Untagged
+  m_TagString: Enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40,8 +40,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1554503774496950}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.26, y: -1.77, z: 0}
-  m_LocalScale: {x: 8, y: 8, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 18, y: 18, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aef6034124a7d2845a9b620396edb5a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 0.1
+  maxSpeed: 5
   playerVelocity: {x: 0, y: 0, z: 0}
   maxSteering: 2
   steeringBehvaiours: []
@@ -108,10 +108,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   desiredVelocity: {x: 0, y: 0, z: 0}
   steeringVelocity: {x: 0, y: 0, z: 0}
-  circleRadius: 300
-  wanderJitter: 0.1
-  circleDistance: 0.01
-  TurnChance: 0.05
+  circleRadius: 30
+  wanderJitter: 10
+  circleDistance: 10
+  TurnChance: 10
 --- !u!114 &114702333056756368
 MonoBehaviour:
   m_ObjectHideFlags: 1

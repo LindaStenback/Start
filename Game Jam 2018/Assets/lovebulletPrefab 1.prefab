@@ -86,6 +86,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   follow: {fileID: 0}
+  NPCPrefab: {fileID: 1554503774496950, guid: c98b2aba04e01b345a6b34f705fa61a2, type: 2}
+  spawnPoint: {x: 0, y: 0, z: 0}
 --- !u!135 &135920426780760642
 SphereCollider:
   m_ObjectHideFlags: 1
