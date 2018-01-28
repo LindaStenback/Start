@@ -14,9 +14,6 @@ TagManager:
   - Enemies
   - Camera
   - Wall
-  - AuraBuff
-  - coffee
-  - ImmunityBuff
   layers:
   - Default
   - TransparentFX

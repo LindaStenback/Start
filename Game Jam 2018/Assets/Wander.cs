@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wander : SteeringBehaviour
-{
-     float waitTimer;
+public class Wander : SteeringBehaviour {
+    
     public float circleRadius = 300f;
     public float wanderJitter = 100f;
     public float circleDistance = 1f;
@@ -17,35 +16,31 @@ public class Wander : SteeringBehaviour
     private Vector3 velocity;
 
     // Use this for initialization
-    void Start()
-    {
+    void Start () {
         velocity = Random.insideUnitCircle;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
+	
+	// Update is called once per frame
+	void Update () {
         
-    }
-
+	}
+    
     public override Vector3 UpdateBehaviour(SteeringAgent steeringAgent)
     {
+        
       
-<<<<<<< HEAD
         
         desiredVelocity = GetWanderForce();
-=======
-
-        var desiredVelocity = GetWanderForce();
->>>>>>> f6452f7898e6e1908d3a64cf3e0a1da97b05e245
         desiredVelocity = desiredVelocity.normalized * steeringAgent.maxSpeed;
 
         steeringVelocity = desiredVelocity - velocity;
-        steeringVelocity = Vector3.ClampMagnitude(steeringVelocity, steeringAgent.maxSteering);
+        steeringVelocity = Vector3.ClampMagnitude(steeringVelocity, steeringAgent.maxSteering) ;
+        
+        
 
-        velocity = Vector3.ClampMagnitude(velocity + steeringVelocity, steeringAgent.maxSpeed);
+         velocity = Vector3.ClampMagnitude(velocity + steeringVelocity, steeringAgent.maxSpeed);
         //transform.position += velocity * Time.deltaTime;
-        transform.up = velocity.normalized;
+         transform.up = velocity.normalized;
 
         steeringVelocity = (desiredVelocity - steeringAgent.currentVelocity) * steeringAgent.wanderWeight;
         return steeringVelocity;
@@ -56,7 +51,7 @@ public class Wander : SteeringBehaviour
 
     private Vector3 GetWanderForce()
     {
-
+        
         if (transform.position.magnitude > circleRadius)
         {
             var directionToCenter = (targetPosition - transform.position).normalized;
@@ -83,5 +78,3 @@ public class Wander : SteeringBehaviour
     }
 
 }
-
-
