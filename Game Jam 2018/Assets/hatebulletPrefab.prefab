@@ -86,9 +86,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   follow: {fileID: 0}
-  Player1: {fileID: 1285368188944222, guid: 3afe71932a88c8341a0aa45d630ed840, type: 2}
-  Player2: {fileID: 1333185631350574, guid: 4fab9df1fdcc2914e80d0ef0e452fd2c, type: 2}
-  enemy: {fileID: 0}
 --- !u!135 &135113445353540128
 SphereCollider:
   m_ObjectHideFlags: 1

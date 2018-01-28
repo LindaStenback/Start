@@ -30,7 +30,7 @@ public class Wander : SteeringBehaviour {
         
       
         
-        desiredVelocity = GetWanderForce();
+        var desiredVelocity = GetWanderForce();
         desiredVelocity = desiredVelocity.normalized * steeringAgent.maxSpeed;
 
         steeringVelocity = desiredVelocity - velocity;
@@ -42,8 +42,8 @@ public class Wander : SteeringBehaviour {
         //transform.position += velocity * Time.deltaTime;
          transform.up = velocity.normalized;
 
-        steeringVelocity = (desiredVelocity - steeringAgent.currentVelocity) * steeringAgent.wanderWeight;
-        return steeringVelocity;
+        base.steeringVelocity = (desiredVelocity - steeringAgent.currentVelocity) * steeringAgent.wanderWeight;
+        return base.steeringVelocity;
 
 
     }

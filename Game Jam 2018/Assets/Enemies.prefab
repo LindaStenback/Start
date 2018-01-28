@@ -26,11 +26,9 @@ GameObject:
   - component: {fileID: 114362188513432868}
   - component: {fileID: 54111805259859470}
   - component: {fileID: 135474641119020722}
-  - component: {fileID: 114723070308873844}
-  - component: {fileID: 114524613638397490}
   m_Layer: 0
   m_Name: Enemies
-  m_TagString: Enemies
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,13 +39,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1554503774496950}
-  m_LocalRotation: {x: -0.0065509235, y: -0, z: -0, w: 0.99997854}
-  m_LocalPosition: {x: -11.2, y: -15.103649, z: 0}
-  m_LocalScale: {x: 18, y: 18, z: 0.5}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.26, y: -1.77, z: 0}
+  m_LocalScale: {x: 8, y: 8, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -0.75100005, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &54111805259859470
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -88,7 +86,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aef6034124a7d2845a9b620396edb5a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
+  maxSpeed: 0.1
   playerVelocity: {x: 0, y: 0, z: 0}
   maxSteering: 2
   steeringBehvaiours: []
@@ -110,21 +108,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   desiredVelocity: {x: 0, y: 0, z: 0}
   steeringVelocity: {x: 0, y: 0, z: 0}
-  circleRadius: 30
-  wanderJitter: 10
-  circleDistance: 10
-  TurnChance: 10
---- !u!114 &114524613638397490
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1554503774496950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b85c0de5747cdeb4b969203873025dd7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  circleRadius: 300
+  wanderJitter: 0.1
+  circleDistance: 0.01
+  TurnChance: 0.05
 --- !u!114 &114702333056756368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -138,24 +125,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   desiredVelocity: {x: 0, y: 0, z: 0}
   steeringVelocity: {x: 0, y: 0, z: 0}
---- !u!114 &114723070308873844
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1554503774496950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2e86494f5e7c39458466ca2e676b58b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerLifeScript: {fileID: 0}
-  playerLifeScript2: {fileID: 0}
-  auraBuffTimerP1: 0
-  auraBuffTimerP2: 0
-  immuneTimerP1: 0
-  immuneTimerP2: 0
-  follow: {fileID: 0}
 --- !u!135 &135474641119020722
 SphereCollider:
   m_ObjectHideFlags: 1
