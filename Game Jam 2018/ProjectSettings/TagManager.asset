@@ -14,7 +14,13 @@ TagManager:
   - Enemies
   - Camera
   - Wall
+<<<<<<< HEAD
   - SeekTarget
+=======
+  - AuraBuff
+  - coffee
+  - ImmunityBuff
+>>>>>>> 6dace9e7087208180ad50781e318274c7548ee5b
   layers:
   - Default
   - TransparentFX
