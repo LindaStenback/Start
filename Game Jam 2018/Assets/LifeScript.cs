@@ -68,13 +68,13 @@ public class LifeScript : MonoBehaviour {
 
         if (player1RespawnTimer < 0)
         {
-            player1.SetActive(true);
+            //player1.SetActive(true);
             player1.GetComponent<Collider>().enabled = true;
         }
 
         if (player2RespawnTimer < 0)
         {
-            player2.SetActive(true);
+            //player2.SetActive(true);
             player2.GetComponent<Collider>().enabled = true;
         }
 
