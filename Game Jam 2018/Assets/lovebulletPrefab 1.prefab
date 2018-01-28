@@ -86,6 +86,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   follow: {fileID: 0}
+  Player1: {fileID: 0}
+  Player2: {fileID: 0}
+  enemy: {fileID: 0}
 --- !u!135 &135920426780760642
 SphereCollider:
   m_ObjectHideFlags: 1

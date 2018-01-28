@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class BulletCollisionScript: MonoBehaviour {
     public Follow follow;
-   
+    public GameObject Player1;
+    public GameObject Player2;
+
+    public GameObject enemy;
+    
 
     // Use this for initialization
     void Start () {
@@ -23,6 +27,7 @@ public class BulletCollisionScript: MonoBehaviour {
             case "Enemies":
              if (this.gameObject.tag == "Bullet")
                 {
+                    //enemy.GetComponent<SpriteRenderer>().color = new Color(244, 66, 212, 255);
                     follow = other.gameObject.GetComponent<Follow>();
                     if (follow.Player1sBitch == false)
                     {
@@ -31,11 +36,13 @@ public class BulletCollisionScript: MonoBehaviour {
                         follow.Player1sBitch = true;
                         follow.Player2sBitch = false;
                         other.tag = "Player1sBitch";
+                       
                     }
                 }
 
              if( this.gameObject.tag == "Bullet2")
                 {
+                    //enemy.GetComponent<SpriteRenderer>().color = new Color(62, 242, 80, 255);
                     follow = other.gameObject.GetComponent<Follow>();
                     if (follow.Player2sBitch == false)
                     {
@@ -43,6 +50,7 @@ public class BulletCollisionScript: MonoBehaviour {
                         follow.Player2sBitch = true;
                         follow.Player1sBitch = false;
                         other.tag = "Player2sBitch";
+                        
                     }
                 }
 
