@@ -2,14 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game Jam 2018", "Game Jam 2018.csproj", "{54882CD5-6D0D-91A7-9E53-5EF38500AB8A}"
-<<<<<<< HEAD
-=======
-=======
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game Jam 2018", "Assembly-CSharp.csproj", "{00E9B5EE-0F59-CE13-2A47-746694A2141C}"
->>>>>>> 5092d5bba09801f494e451401c9b0033229b4b47
->>>>>>> a55522299d6b378049bedede5b57cc199873ad8d
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,23 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> a55522299d6b378049bedede5b57cc199873ad8d
 		{54882CD5-6D0D-91A7-9E53-5EF38500AB8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{54882CD5-6D0D-91A7-9E53-5EF38500AB8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54882CD5-6D0D-91A7-9E53-5EF38500AB8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54882CD5-6D0D-91A7-9E53-5EF38500AB8A}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
-=======
-=======
-		{00E9B5EE-0F59-CE13-2A47-746694A2141C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{00E9B5EE-0F59-CE13-2A47-746694A2141C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{00E9B5EE-0F59-CE13-2A47-746694A2141C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{00E9B5EE-0F59-CE13-2A47-746694A2141C}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> 5092d5bba09801f494e451401c9b0033229b4b47
->>>>>>> a55522299d6b378049bedede5b57cc199873ad8d
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
